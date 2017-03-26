@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/http-proxy.png?downloads=true)](https://www.npmjs.com/package/http-proxy)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-http-proxy/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-http_proxy_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-http-proxy/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-http-proxy/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-http-proxy_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-http-proxy/build..beta..travis-ci.org/apidoc.html)
 
 ![package-listing](https://npmdoc.github.io/node-npmdoc-http-proxy/build/screen-capture.npmPackageListing.svg)
 
