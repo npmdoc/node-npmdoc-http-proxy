@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http-proxy">
+            function <span class="apidocSignatureSpan"></span>http-proxy
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.http-proxy.createProxy">
             function <span class="apidocSignatureSpan">http-proxy.</span>createProxy
             <span class="apidocSignatureSpan">(options)</span>
@@ -90,6 +99,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy">
+            function <span class="apidocSignatureSpan">http-proxy.</span>http_proxy
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.http-proxy.super_">
             function <span class="apidocSignatureSpan">http-proxy.</span>super_
             <span class="apidocSignatureSpan">()</span>
@@ -99,7 +117,111 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.</span>http_proxy.prototype</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.</span>super_.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.http-proxy.http_proxy">module http-proxy.http_proxy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.http_proxy">
+            function <span class="apidocSignatureSpan">http-proxy.</span>http_proxy
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.createProxy">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.</span>createProxy
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.createProxyServer">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.</span>createProxyServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.createServer">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.</span>createServer
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.super_">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.http-proxy.http_proxy.prototype">module http-proxy.http_proxy.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.prototype.after">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>after
+            <span class="apidocSignatureSpan">(type, passName, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.prototype.before">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>before
+            <span class="apidocSignatureSpan">(type, passName, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.prototype.close">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>close
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.prototype.listen">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>listen
+            <span class="apidocSignatureSpan">(port, hostname)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.http_proxy.prototype.onError">
+            function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>onError
+            <span class="apidocSignatureSpan">(err)</span>
+            </a>
 
         </li>
 
@@ -222,6 +344,39 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.http-proxy" id="apidoc.module.http-proxy">module http-proxy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http-proxy" id="apidoc.element.http-proxy.http-proxy">
+        function <span class="apidocSignatureSpan"></span>http-proxy
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ProxyServer(options) {
+  EE3.call(this);
+
+  options = options || {};
+  options.prependPath = options.prependPath === false ? false : true;
+
+  this.web = this.proxyRequest           = createRightProxy(&#x27;web&#x27;)(options);
+  this.ws  = this.proxyWebsocketRequest  = createRightProxy(&#x27;ws&#x27;)(options);
+  this.options = options;
+
+  this.webPasses = Object.keys(web).map(function(pass) {
+    return web[pass];
+  });
+
+  this.wsPasses = Object.keys(ws).map(function(pass) {
+    return ws[pass];
+  });
+
+  this.on(&#x27;error&#x27;, this.onError, this);
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
@@ -395,6 +550,39 @@ Errors can be listened on either using the Event Emitter API
 
 
     <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy" id="apidoc.element.http-proxy.http_proxy">
+        function <span class="apidocSignatureSpan">http-proxy.</span>http_proxy
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ProxyServer(options) {
+  EE3.call(this);
+
+  options = options || {};
+  options.prependPath = options.prependPath === false ? false : true;
+
+  this.web = this.proxyRequest           = createRightProxy(&#x27;web&#x27;)(options);
+  this.ws  = this.proxyWebsocketRequest  = createRightProxy(&#x27;ws&#x27;)(options);
+  this.options = options;
+
+  this.webPasses = Object.keys(web).map(function(pass) {
+    return web[pass];
+  });
+
+  this.wsPasses = Object.keys(ws).map(function(pass) {
+    return ws[pass];
+  });
+
+  this.on(&#x27;error&#x27;, this.onError, this);
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.http-proxy.super_" id="apidoc.element.http-proxy.super_">
         function <span class="apidocSignatureSpan">http-proxy.</span>super_
         <span class="apidocSignatureSpan">()</span>
@@ -406,6 +594,396 @@ Errors can be listened on either using the Event Emitter API
     </ul>
 
 
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.http-proxy.http_proxy" id="apidoc.module.http-proxy.http_proxy">module http-proxy.http_proxy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.http_proxy" id="apidoc.element.http-proxy.http_proxy.http_proxy">
+        function <span class="apidocSignatureSpan">http-proxy.</span>http_proxy
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ProxyServer(options) {
+  EE3.call(this);
+
+  options = options || {};
+  options.prependPath = options.prependPath === false ? false : true;
+
+  this.web = this.proxyRequest           = createRightProxy(&#x27;web&#x27;)(options);
+  this.ws  = this.proxyWebsocketRequest  = createRightProxy(&#x27;ws&#x27;)(options);
+  this.options = options;
+
+  this.webPasses = Object.keys(web).map(function(pass) {
+    return web[pass];
+  });
+
+  this.wsPasses = Object.keys(ws).map(function(pass) {
+    return ws[pass];
+  });
+
+  this.on(&#x27;error&#x27;, this.onError, this);
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.createProxy" id="apidoc.element.http-proxy.http_proxy.createProxy">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.</span>createProxy
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createProxyServer(options) {
+<span class="apidocCodeCommentSpan">  /*
+   *  `options` is needed and it must have the following layout:
+   *
+   *  {
+   *    target : &#x3c;url string to be parsed with the url module&#x3e;
+   *    forward: &#x3c;url string to be parsed with the url module&#x3e;
+   *    agent  : &#x3c;object to be passed to http(s).request&#x3e;
+   *    ssl    : &#x3c;object to be passed to https.createServer()&#x3e;
+   *    ws     : &#x3c;true/false, if you want to proxy websockets&#x3e;
+   *    xfwd   : &#x3c;true/false, adds x-forward headers&#x3e;
+   *    secure : &#x3c;true/false, verify SSL certificate&#x3e;
+   *    toProxy: &#x3c;true/false, explicitly specify if we are proxying to another proxy&#x3e;
+   *    prependPath: &#x3c;true/false, Default: true - specify whether you want to prepend the target&#x27;s path to the proxy path&#x3e;
+   *    ignorePath: &#x3c;true/false, Default: false - specify whether you want to ignore the proxy path of the incoming request&#x3e;
+   *    localAddress : &#x3c;Local interface string to bind for outgoing connections&#x3e;
+   *    changeOrigin: &#x3c;true/false, Default: false - changes the origin of the host header to the target URL&#x3e;
+   *    preserveHeaderKeyCase: &#x3c;true/false, Default: false - specify whether you want to keep letter case of response header key
+ &#x3e;
+   *    auth   : Basic authentication i.e. &#x27;user:password&#x27; to compute an Authorization header.
+   *    hostRewrite: rewrites the location hostname on (301/302/307/308) redirects, Default: null.
+   *    autoRewrite: rewrites the location host/port on (301/302/307/308) redirects based on requested host/port. Default: false
+.
+   *    protocolRewrite: rewrites the location protocol on (301/302/307/308) redirects to &#x27;http&#x27; or &#x27;https&#x27;. Default: null.
+   *  }
+   *
+   *  NOTE: `options.ws` and `options.ssl` are optional.
+   *    `options.target and `options.forward` cannot be
+   *    both missing
+   *  }
+   */
+</span>
+  return new ProxyServer(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.createProxyServer" id="apidoc.element.http-proxy.http_proxy.createProxyServer">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.</span>createProxyServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createProxyServer(options) {
+<span class="apidocCodeCommentSpan">  /*
+   *  `options` is needed and it must have the following layout:
+   *
+   *  {
+   *    target : &#x3c;url string to be parsed with the url module&#x3e;
+   *    forward: &#x3c;url string to be parsed with the url module&#x3e;
+   *    agent  : &#x3c;object to be passed to http(s).request&#x3e;
+   *    ssl    : &#x3c;object to be passed to https.createServer()&#x3e;
+   *    ws     : &#x3c;true/false, if you want to proxy websockets&#x3e;
+   *    xfwd   : &#x3c;true/false, adds x-forward headers&#x3e;
+   *    secure : &#x3c;true/false, verify SSL certificate&#x3e;
+   *    toProxy: &#x3c;true/false, explicitly specify if we are proxying to another proxy&#x3e;
+   *    prependPath: &#x3c;true/false, Default: true - specify whether you want to prepend the target&#x27;s path to the proxy path&#x3e;
+   *    ignorePath: &#x3c;true/false, Default: false - specify whether you want to ignore the proxy path of the incoming request&#x3e;
+   *    localAddress : &#x3c;Local interface string to bind for outgoing connections&#x3e;
+   *    changeOrigin: &#x3c;true/false, Default: false - changes the origin of the host header to the target URL&#x3e;
+   *    preserveHeaderKeyCase: &#x3c;true/false, Default: false - specify whether you want to keep letter case of response header key
+ &#x3e;
+   *    auth   : Basic authentication i.e. &#x27;user:password&#x27; to compute an Authorization header.
+   *    hostRewrite: rewrites the location hostname on (301/302/307/308) redirects, Default: null.
+   *    autoRewrite: rewrites the location host/port on (301/302/307/308) redirects based on requested host/port. Default: false
+.
+   *    protocolRewrite: rewrites the location protocol on (301/302/307/308) redirects to &#x27;http&#x27; or &#x27;https&#x27;. Default: null.
+   *  }
+   *
+   *  NOTE: `options.ws` and `options.ssl` are optional.
+   *    `options.target and `options.forward` cannot be
+   *    both missing
+   *  }
+   */
+</span>
+  return new ProxyServer(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+A new proxy is created by calling `createProxyServer` and passing
+an `options` object as argument ([valid properties are available here](lib/http-proxy.js#L33-L50))
+
+```javascript
+var httpProxy = require(&#x27;http-proxy&#x27;);
+
+var proxy = httpProxy.<span class="apidocCodeKeywordSpan">createProxyServer</span>(options); // See (†)
+```
+†Unless listen(..) is invoked on the object, this does not create a webserver. See below.
+
+An object will be returned with four methods:
+
+* web `req, res, [options]` (used for proxying regular HTTP(S) requests)
+* ws `req, socket, head, [options]` (used for proxying WS(S) requests)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.createServer" id="apidoc.element.http-proxy.http_proxy.createServer">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.</span>createServer
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createProxyServer(options) {
+<span class="apidocCodeCommentSpan">  /*
+   *  `options` is needed and it must have the following layout:
+   *
+   *  {
+   *    target : &#x3c;url string to be parsed with the url module&#x3e;
+   *    forward: &#x3c;url string to be parsed with the url module&#x3e;
+   *    agent  : &#x3c;object to be passed to http(s).request&#x3e;
+   *    ssl    : &#x3c;object to be passed to https.createServer()&#x3e;
+   *    ws     : &#x3c;true/false, if you want to proxy websockets&#x3e;
+   *    xfwd   : &#x3c;true/false, adds x-forward headers&#x3e;
+   *    secure : &#x3c;true/false, verify SSL certificate&#x3e;
+   *    toProxy: &#x3c;true/false, explicitly specify if we are proxying to another proxy&#x3e;
+   *    prependPath: &#x3c;true/false, Default: true - specify whether you want to prepend the target&#x27;s path to the proxy path&#x3e;
+   *    ignorePath: &#x3c;true/false, Default: false - specify whether you want to ignore the proxy path of the incoming request&#x3e;
+   *    localAddress : &#x3c;Local interface string to bind for outgoing connections&#x3e;
+   *    changeOrigin: &#x3c;true/false, Default: false - changes the origin of the host header to the target URL&#x3e;
+   *    preserveHeaderKeyCase: &#x3c;true/false, Default: false - specify whether you want to keep letter case of response header key
+ &#x3e;
+   *    auth   : Basic authentication i.e. &#x27;user:password&#x27; to compute an Authorization header.
+   *    hostRewrite: rewrites the location hostname on (301/302/307/308) redirects, Default: null.
+   *    autoRewrite: rewrites the location host/port on (301/302/307/308) redirects based on requested host/port. Default: false
+.
+   *    protocolRewrite: rewrites the location protocol on (301/302/307/308) redirects to &#x27;http&#x27; or &#x27;https&#x27;. Default: null.
+   *  }
+   *
+   *  NOTE: `options.ws` and `options.ssl` are optional.
+   *    `options.target and `options.forward` cannot be
+   *    both missing
+   *  }
+   */
+</span>
+  return new ProxyServer(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* ws `req, socket, head, [options]` (used for proxying WS(S) requests)
+* listen `port` (a function that wraps the object in a webserver, for your convenience)
+* close `[callback]` (a function that closes the inner webserver and stops listening on given port)
+
+It is then possible to proxy requests by calling these functions
+
+```javascript
+http.<span class="apidocCodeKeywordSpan">createServer</span>(function(req, res) {
+  proxy.web(req, res, { target: &#x27;http://mytarget.com:8080&#x27; });
+});
+```
+
+Errors can be listened on either using the Event Emitter API
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.super_" id="apidoc.element.http-proxy.http_proxy.super_">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() { /* Nothing to set */ }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.http-proxy.http_proxy.prototype" id="apidoc.module.http-proxy.http_proxy.prototype">module http-proxy.http_proxy.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.prototype.after" id="apidoc.element.http-proxy.http_proxy.prototype.after">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>after
+        <span class="apidocSignatureSpan">(type, passName, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">after = function (type, passName, callback) {
+  if (type !== &#x27;ws&#x27; &#x26;&#x26; type !== &#x27;web&#x27;) {
+    throw new Error(&#x27;type must be `web` or `ws`&#x27;);
+  }
+  var passes = (type === &#x27;ws&#x27;) ? this.wsPasses : this.webPasses,
+      i = false;
+
+  passes.forEach(function(v, idx) {
+    if(v.name === passName) i = idx;
+  })
+
+  if(i === false) throw new Error(&#x27;No such pass&#x27;);
+
+  passes.splice(i++, 0, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.prototype.before" id="apidoc.element.http-proxy.http_proxy.prototype.before">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>before
+        <span class="apidocSignatureSpan">(type, passName, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">before = function (type, passName, callback) {
+  if (type !== &#x27;ws&#x27; &#x26;&#x26; type !== &#x27;web&#x27;) {
+    throw new Error(&#x27;type must be `web` or `ws`&#x27;);
+  }
+  var passes = (type === &#x27;ws&#x27;) ? this.wsPasses : this.webPasses,
+      i = false;
+
+  passes.forEach(function(v, idx) {
+    if(v.name === passName) i = idx;
+  })
+
+  if(i === false) throw new Error(&#x27;No such pass&#x27;);
+
+  passes.splice(i, 0, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.prototype.close" id="apidoc.element.http-proxy.http_proxy.prototype.close">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>close
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">close = function (callback) {
+  var self = this;
+  if (this._server) {
+    this._server.close(done);
+  }
+
+  // Wrap callback to nullify server after all open connections are closed.
+  function done() {
+    self._server = null;
+    if (callback) {
+      callback.apply(null, arguments);
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var proxy = new httpProxy.createProxyServer({
+  target: {
+    host: &#x27;localhost&#x27;,
+    port: 1337
+  }
+});
+
+proxy.<span class="apidocCodeKeywordSpan">close</span>();
+```
+
+**[Back to top](#table-of-contents)**
+
+### Miscellaneous
+
+#### ProxyTable API
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.prototype.listen" id="apidoc.element.http-proxy.http_proxy.prototype.listen">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>listen
+        <span class="apidocSignatureSpan">(port, hostname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listen = function (port, hostname) {
+  var self    = this,
+      closure = function(req, res) { self.web(req, res); };
+
+  this._server  = this.options.ssl ?
+    https.createServer(this.options.ssl, closure) :
+    http.createServer(closure);
+
+  if(this.options.ws) {
+    this._server.on(&#x27;upgrade&#x27;, function(req, socket, head) { self.ws(req, socket, head); });
+  }
+
+  this._server.listen(port, hostname);
+
+  return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```js
+var http = require(&#x27;http&#x27;),
+  httpProxy = require(&#x27;http-proxy&#x27;);
+//
+// Create your proxy server and set the target in the options.
+//
+httpProxy.createProxyServer({target:&#x27;http://localhost:9000&#x27;}).<span class="apidocCodeKeywordSpan">listen</span>(8000); //
+See (†)
+
+//
+// Create your target server
+//
+http.createServer(function (req, res) {
+res.writeHead(200, { &#x27;Content-Type&#x27;: &#x27;text/plain&#x27; });
+res.write(&#x27;request successfully proxied!&#x27; + &#x27;\n&#x27; + JSON.stringify(req.headers, true, 2));
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.http_proxy.prototype.onError" id="apidoc.element.http-proxy.http_proxy.prototype.onError">
+        function <span class="apidocSignatureSpan">http-proxy.http_proxy.prototype.</span>onError
+        <span class="apidocSignatureSpan">(err)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onError = function (err) {
+  //
+  // Remark: Replicate node core behavior using EE3
+  // so we force people to handle their own errors
+  //
+  if(this.listeners(&#x27;error&#x27;).length === 1) {
+    throw err;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
 
 
 </div>
