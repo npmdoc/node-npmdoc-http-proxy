@@ -110,6 +110,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.</span>common</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.</span>http_proxy.prototype</span>
 
         </li>
@@ -117,6 +123,88 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.</span>super_.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.</span>web_incoming</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.</span>web_outgoing</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.</span>ws_incoming</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.http-proxy.common">module http-proxy.common</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.common.getPort">
+            function <span class="apidocSignatureSpan">http-proxy.common.</span>getPort
+            <span class="apidocSignatureSpan">(req)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.common.hasEncryptedConnection">
+            function <span class="apidocSignatureSpan">http-proxy.common.</span>hasEncryptedConnection
+            <span class="apidocSignatureSpan">(req)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.common.rewriteCookieDomain">
+            function <span class="apidocSignatureSpan">http-proxy.common.</span>rewriteCookieDomain
+            <span class="apidocSignatureSpan">(header, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.common.setupOutgoing">
+            function <span class="apidocSignatureSpan">http-proxy.common.</span>setupOutgoing
+            <span class="apidocSignatureSpan">(outgoing, options, req, forward)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.common.setupSocket">
+            function <span class="apidocSignatureSpan">http-proxy.common.</span>setupSocket
+            <span class="apidocSignatureSpan">(socket)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.common.urlJoin">
+            function <span class="apidocSignatureSpan">http-proxy.common.</span>urlJoin
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">http-proxy.common.</span>isSSL</span>
 
         </li>
 
@@ -327,6 +415,126 @@
             <a class="apidocElementLiA" href="#apidoc.element.http-proxy.super_.prototype.setMaxListeners">
             function <span class="apidocSignatureSpan">http-proxy.super_.prototype.</span>setMaxListeners
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.http-proxy.web_incoming">module http-proxy.web_incoming</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_incoming.XHeaders">
+            function <span class="apidocSignatureSpan">http-proxy.web_incoming.</span>XHeaders
+            <span class="apidocSignatureSpan">(req, res, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_incoming.deleteLength">
+            function <span class="apidocSignatureSpan">http-proxy.web_incoming.</span>deleteLength
+            <span class="apidocSignatureSpan">(req, res, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_incoming.stream">
+            function <span class="apidocSignatureSpan">http-proxy.web_incoming.</span>stream
+            <span class="apidocSignatureSpan">(req, res, options, _, server, clb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_incoming.timeout">
+            function <span class="apidocSignatureSpan">http-proxy.web_incoming.</span>timeout
+            <span class="apidocSignatureSpan">(req, res, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.http-proxy.web_outgoing">module http-proxy.web_outgoing</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_outgoing.removeChunked">
+            function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>removeChunked
+            <span class="apidocSignatureSpan">(req, res, proxyRes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_outgoing.setConnection">
+            function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>setConnection
+            <span class="apidocSignatureSpan">(req, res, proxyRes)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_outgoing.setRedirectHostRewrite">
+            function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>setRedirectHostRewrite
+            <span class="apidocSignatureSpan">(req, res, proxyRes, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_outgoing.writeHeaders">
+            function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>writeHeaders
+            <span class="apidocSignatureSpan">(req, res, proxyRes, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.web_outgoing.writeStatusCode">
+            function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>writeStatusCode
+            <span class="apidocSignatureSpan">(req, res, proxyRes)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.http-proxy.ws_incoming">module http-proxy.ws_incoming</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.ws_incoming.XHeaders">
+            function <span class="apidocSignatureSpan">http-proxy.ws_incoming.</span>XHeaders
+            <span class="apidocSignatureSpan">(req, socket, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.ws_incoming.checkMethodAndHeader">
+            function <span class="apidocSignatureSpan">http-proxy.ws_incoming.</span>checkMethodAndHeader
+            <span class="apidocSignatureSpan">(req, socket)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.http-proxy.ws_incoming.stream">
+            function <span class="apidocSignatureSpan">http-proxy.ws_incoming.</span>stream
+            <span class="apidocSignatureSpan">(req, socket, options, head, server, clb)</span>
             </a>
 
         </li>
@@ -587,6 +795,337 @@ Errors can be listened on either using the Event Emitter API
     </ul>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.http-proxy.common" id="apidoc.module.http-proxy.common">module http-proxy.common</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.common.getPort" id="apidoc.element.http-proxy.common.getPort">
+        function <span class="apidocSignatureSpan">http-proxy.common.</span>getPort
+        <span class="apidocSignatureSpan">(req)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPort = function (req) {
+  var res = req.headers.host ? req.headers.host.match(/:(\d+)/) : '';
+
+  return res ?
+    res[1] :
+    common.hasEncryptedConnection(req) ? '443' : '80';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  XHeaders: function XHeaders(req, res, options) {
+if(!options.xfwd) return;
+
+var encrypted = req.isSpdy || common.hasEncryptedConnection(req);
+var values = {
+  for  : req.connection.remoteAddress || req.socket.remoteAddress,
+  port : common.<span class="apidocCodeKeywordSpan">getPort</span>(req),
+  proto: encrypted ? 'https' : 'http'
+};
+
+['for', 'port', 'proto'].forEach(function(header) {
+  req.headers['x-forwarded-' + header] =
+    (req.headers['x-forwarded-' + header] || '') +
+    (req.headers['x-forwarded-' + header] ? ',' : '') +
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.common.hasEncryptedConnection" id="apidoc.element.http-proxy.common.hasEncryptedConnection">
+        function <span class="apidocSignatureSpan">http-proxy.common.</span>hasEncryptedConnection
+        <span class="apidocSignatureSpan">(req)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hasEncryptedConnection = function (req) {
+  return Boolean(req.connection.encrypted || req.connection.pair);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @api private
+*/
+common.getPort = function(req) {
+ var res = req.headers.host ? req.headers.host.match(/:(\d+)/) : '';
+
+ return res ?
+   res[1] :
+   common.<span class="apidocCodeKeywordSpan">hasEncryptedConnection</span>(req) ? '443' : '80';
+};
+
+/**
+* Check if the request has an encrypted connection.
+*
+* @param {Request} req Incoming HTTP request.
+*
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.common.rewriteCookieDomain" id="apidoc.element.http-proxy.common.rewriteCookieDomain">
+        function <span class="apidocSignatureSpan">http-proxy.common.</span>rewriteCookieDomain
+        <span class="apidocSignatureSpan">(header, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function rewriteCookieDomain(header, config) {
+  if (Array.isArray(header)) {
+    return header.map(function (headerElement) {
+      return rewriteCookieDomain(headerElement, config);
+    });
+  }
+  return header.replace(cookieDomainRegex, function(match, prefix, previousDomain) {
+    var newDomain;
+    if (previousDomain in config) {
+      newDomain = config[previousDomain];
+    } else if ('*' in config) {
+      newDomain = config['*'];
+    } else {
+      //no match, return previous domain
+      return match;
+    }
+    if (newDomain) {
+      //replace domain
+      return prefix + newDomain;
+    } else {
+      //remove domain
+      return '';
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  writeHeaders: function writeHeaders(req, res, proxyRes, options) {
+var rewriteCookieDomainConfig = options.cookieDomainRewrite,
+    preserveHeaderKeyCase = options.preserveHeaderKeyCase,
+    rawHeaderKeyMap,
+    setHeader = function(key, header) {
+      if (header == undefined) return;
+      if (rewriteCookieDomainConfig &amp;&amp; key.toLowerCase() === 'set-cookie') {
+        header = common.<span class="apidocCodeKeywordSpan">rewriteCookieDomain</span>(header, rewriteCookieDomainConfig);
+      }
+      res.setHeader(String(key).trim(), header);
+    };
+
+if (typeof rewriteCookieDomainConfig === 'string') { //also test for ''
+  rewriteCookieDomainConfig = { '*': rewriteCookieDomainConfig };
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.common.setupOutgoing" id="apidoc.element.http-proxy.common.setupOutgoing">
+        function <span class="apidocSignatureSpan">http-proxy.common.</span>setupOutgoing
+        <span class="apidocSignatureSpan">(outgoing, options, req, forward)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setupOutgoing = function (outgoing, options, req, forward) {
+  outgoing.port = options[forward || 'target'].port ||
+                  (isSSL.test(options[forward || 'target'].protocol) ? 443 : 80);
+
+  ['host', 'hostname', 'socketPath', 'pfx', 'key',
+    'passphrase', 'cert', 'ca', 'ciphers', 'secureProtocol'].forEach(
+    function(e) { outgoing[e] = options[forward || 'target'][e]; }
+  );
+
+  outgoing.method = req.method;
+  outgoing.headers = extend({}, req.headers);
+
+  if (options.headers){
+    extend(outgoing.headers, options.headers);
+  }
+
+  if (options.auth) {
+    outgoing.auth = options.auth;
+  }
+
+  if (options.ca) {
+      outgoing.ca = options.ca;
+  }
+
+  if (isSSL.test(options[forward || 'target'].protocol)) {
+    outgoing.rejectUnauthorized = (typeof options.secure === "undefined") ? true : options.secure;
+  }
+
+
+  outgoing.agent = options.agent || false;
+  outgoing.localAddress = options.localAddress;
+
+  //
+  // Remark: If we are false and not upgrading, set the connection: close. This is the right thing to do
+  // as node core doesn't handle this COMPLETELY properly yet.
+  //
+  if (!outgoing.agent) {
+    outgoing.headers = outgoing.headers || {};
+    if (typeof outgoing.headers.connection !== 'string'
+        || !upgradeHeader.test(outgoing.headers.connection)
+       ) { outgoing.headers.connection = 'close'; }
+  }
+
+
+  // the final path is target path + relative path requested by user:
+  var target = options[forward || 'target'];
+  var targetPath = target &amp;&amp; options.prependPath !== false
+    ? (target.path || '')
+    : '';
+
+  //
+  // Remark: Can we somehow not use url.parse as a perf optimization?
+  //
+  var outgoingPath = !options.toProxy
+    ? (url.parse(req.url).path || '')
+    : req.url;
+
+  //
+  // Remark: ignorePath will just straight up ignore whatever the request's
+  // path is. This can be labeled as FOOT-GUN material if you do not know what
+  // you are doing and are using conflicting options.
+  //
+  outgoingPath = !options.ignorePath ? outgoingPath : '';
+
+  outgoing.path = common.urlJoin(targetPath, outgoingPath);
+
+  if (options.changeOrigin) {
+    outgoing.headers.host =
+      required(outgoing.port, options[forward || 'target'].protocol) &amp;&amp; !hasPort(outgoing.host)
+        ? outgoing.host + ':' + outgoing.port
+        : outgoing.host;
+  }
+  return outgoing;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+* Copies the right headers from `options` and `req` to
+* `outgoing` which is then used to fire the proxied
+* request.
+*
+* Examples:
+*
+*    common.<span class="apidocCodeKeywordSpan">setupOutgoing</span>(outgoing, options, req)
+*    // =&gt; { host: ..., hostname: ...}
+*
+* @param {Object} Outgoing Base object to be filled with required properties
+* @param {Object} Options Config object passed to the proxy
+* @param {ClientRequest} Req Request Object
+* @param {String} Forward String to select forward or target
+*
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.common.setupSocket" id="apidoc.element.http-proxy.common.setupSocket">
+        function <span class="apidocSignatureSpan">http-proxy.common.</span>setupSocket
+        <span class="apidocSignatureSpan">(socket)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setupSocket = function (socket) {
+  socket.setTimeout(0);
+  socket.setNoDelay(true);
+
+  socket.setKeepAlive(true, 0);
+
+  return socket;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+* Set the proper configuration for sockets,
+* set no delay and set keep alive, also set
+* the timeout to 0.
+*
+* Examples:
+*
+*    common.<span class="apidocCodeKeywordSpan">setupSocket</span>(socket)
+*    // =&gt; Socket
+*
+* @param {Socket} Socket instance to setup
+*Â&nbsp;
+* @return {Socket} Return the configured socket.
+*
+* @api private
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.common.urlJoin" id="apidoc.element.http-proxy.common.urlJoin">
+        function <span class="apidocSignatureSpan">http-proxy.common.</span>urlJoin
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">urlJoin = function () {
+    //
+    // We do not want to mess with the query string. All we want to touch is the path.
+    //
+  var args = Array.prototype.slice.call(arguments),
+      lastIndex = args.length - 1,
+      last = args[lastIndex],
+      lastSegs = last.split('?'),
+      retSegs;
+
+  args[lastIndex] = lastSegs.shift();
+
+  //
+  // Join all strings, but remove empty strings so we don't get extra slashes from
+  // joining e.g. ['', 'am']
+  //
+  retSegs = [
+    args.filter(Boolean).join('/')
+        .replace(/\/+/g, '/')
+        .replace('http:/', 'http://')
+        .replace('https:/', 'https://')
+  ];
+
+  // Only join the query string if it exists so we don't have trailing a '?'
+  // on every request
+
+  // Handle case where there could be multiple ? in the URL.
+  retSegs.push.apply(retSegs, lastSegs);
+
+  return retSegs.join('?')
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+//
+// Remark: ignorePath will just straight up ignore whatever the request's
+// path is. This can be labeled as FOOT-GUN material if you do not know what
+// you are doing and are using conflicting options.
+//
+outgoingPath = !options.ignorePath ? outgoingPath : '';
+
+outgoing.path = common.<span class="apidocCodeKeywordSpan">urlJoin</span>(targetPath, outgoingPath);
+
+if (options.changeOrigin) {
+  outgoing.headers.host =
+    required(outgoing.port, options[forward || 'target'].protocol) &amp;&amp; !hasPort(outgoing.host)
+      ? outgoing.host + ':' + outgoing.port
+      : outgoing.host;
+}
+...</pre></li>
+    </ul>
 
 
 
@@ -1089,7 +1628,24 @@ res.write('request successfully proxied!' + '\n' + JSON.stringify(req.headers, t
 
   return true;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+['target', 'forward'].forEach(function(e) {
+  if (typeof options[e] === 'string')
+    options[e] = parse_url(options[e]);
+});
+
+if (!options.target &amp;&amp; !options.forward) {
+  return this.<span class="apidocCodeKeywordSpan">emit</span>('error', new Error('Must provide a proper URL as target
+'));
+}
+
+for(var i=0; i &lt; passes.length; i++) {
+  /**
+   * Call of passes functions
+   * pass(req, res, options, head)
+   *
+...</pre></li>
     </ul>
 
 
@@ -1144,7 +1700,23 @@ res.write('request successfully proxied!' + '\n' + JSON.stringify(req.headers, t
 
   return ee;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+require('util').inherits(ProxyServer, EE3);
+
+ProxyServer.prototype.onError = function (err) {
+//
+// Remark: Replicate node core behavior using EE3
+// so we force people to handle their own errors
+//
+if(this.<span class="apidocCodeKeywordSpan">listeners</span>('error').length === 1) {
+  throw err;
+}
+};
+
+ProxyServer.prototype.listen = function(port, hostname) {
+var self    = this,
+    closure = function(req, res) { self.web(req, res); };
+...</pre></li>
     </ul>
 
 
@@ -1354,6 +1926,460 @@ or using the callback API
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function setMaxListeners() {
   return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.http-proxy.web_incoming" id="apidoc.module.http-proxy.web_incoming">module http-proxy.web_incoming</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_incoming.XHeaders" id="apidoc.element.http-proxy.web_incoming.XHeaders">
+        function <span class="apidocSignatureSpan">http-proxy.web_incoming.</span>XHeaders
+        <span class="apidocSignatureSpan">(req, res, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function XHeaders(req, res, options) {
+  if(!options.xfwd) return;
+
+  var encrypted = req.isSpdy || common.hasEncryptedConnection(req);
+  var values = {
+    for  : req.connection.remoteAddress || req.socket.remoteAddress,
+    port : common.getPort(req),
+    proto: encrypted ? 'https' : 'http'
+  };
+
+  ['for', 'port', 'proto'].forEach(function(header) {
+    req.headers['x-forwarded-' + header] =
+      (req.headers['x-forwarded-' + header] || '') +
+      (req.headers['x-forwarded-' + header] ? ',' : '') +
+      values[header];
+  });
+
+  req.headers['x-forwarded-host'] = req.headers['host'] || '';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_incoming.deleteLength" id="apidoc.element.http-proxy.web_incoming.deleteLength">
+        function <span class="apidocSignatureSpan">http-proxy.web_incoming.</span>deleteLength
+        <span class="apidocSignatureSpan">(req, res, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function deleteLength(req, res, options) {
+  if((req.method === 'DELETE' || req.method === 'OPTIONS')
+     &amp;&amp; !req.headers['content-length']) {
+    req.headers['content-length'] = '0';
+    delete req.headers['transfer-encoding'];
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_incoming.stream" id="apidoc.element.http-proxy.web_incoming.stream">
+        function <span class="apidocSignatureSpan">http-proxy.web_incoming.</span>stream
+        <span class="apidocSignatureSpan">(req, res, options, _, server, clb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function stream(req, res, options, _, server, clb) {
+
+  // And we begin!
+  server.emit('start', req, res, options.target || options.forward);
+
+  if(options.forward) {
+    // If forward enable, so just pipe the request
+    var forwardReq = (options.forward.protocol === 'https:' ? https : http).request(
+      common.setupOutgoing(options.ssl || {}, options, req, 'forward')
+    );
+
+    // error handler (e.g. ECONNRESET, ECONNREFUSED)
+    // Handle errors on incoming request as well as it makes sense to
+    var forwardError = createErrorHandler(forwardReq, options.forward);
+    req.on('error', forwardError);
+    forwardReq.on('error', forwardError);
+
+    (options.buffer || req).pipe(forwardReq);
+    if(!options.target) { return res.end(); }
+  }
+
+  // Request initalization
+  var proxyReq = (options.target.protocol === 'https:' ? https : http).request(
+    common.setupOutgoing(options.ssl || {}, options, req)
+  );
+
+  // Enable developers to modify the proxyReq before headers are sent
+  proxyReq.on('socket', function(socket) {
+    if(server) { server.emit('proxyReq', proxyReq, req, res, options); }
+  });
+
+  // allow outgoing socket to timeout so that we could
+  // show an error page at the initial request
+  if(options.proxyTimeout) {
+    proxyReq.setTimeout(options.proxyTimeout, function() {
+       proxyReq.abort();
+    });
+  }
+
+  // Ensure we abort proxy if request is aborted
+  req.on('aborted', function () {
+    proxyReq.abort();
+  });
+
+  // handle errors in proxy and incoming request, just like for forward proxy
+  var proxyError = createErrorHandler(proxyReq, options.target);
+  req.on('error', proxyError);
+  proxyReq.on('error', proxyError);
+
+  function createErrorHandler(proxyReq, url) {
+    return function proxyError(err) {
+      if (req.socket.destroyed &amp;&amp; err.code === 'ECONNRESET') {
+        server.emit('econnreset', err, req, res, url);
+        return proxyReq.abort();
+      }
+
+      if (clb) {
+        clb(err, req, res, url);
+      } else {
+        server.emit('error', err, req, res, url);
+      }
+    }
+  }
+
+  (options.buffer || req).pipe(proxyReq);
+
+  proxyReq.on('response', function(proxyRes) {
+    if(server) { server.emit('proxyRes', proxyRes, req, res); }
+    for(var i=0; i &lt; web_o.length; i++) {
+      if(web_o[i](req, res, proxyRes, options)) { break; }
+    }
+
+    // Allow us to listen when the proxy has completed
+    proxyRes.on('end', function () {
+      server.emit('end', req, res, proxyRes);
+    });
+
+    proxyRes.pipe(res);
+  });
+
+  //proxyReq.end();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_incoming.timeout" id="apidoc.element.http-proxy.web_incoming.timeout">
+        function <span class="apidocSignatureSpan">http-proxy.web_incoming.</span>timeout
+        <span class="apidocSignatureSpan">(req, res, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function timeout(req, res, options) {
+  if(options.timeout) {
+    req.socket.setTimeout(options.timeout);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.http-proxy.web_outgoing" id="apidoc.module.http-proxy.web_outgoing">module http-proxy.web_outgoing</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_outgoing.removeChunked" id="apidoc.element.http-proxy.web_outgoing.removeChunked">
+        function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>removeChunked
+        <span class="apidocSignatureSpan">(req, res, proxyRes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function removeChunked(req, res, proxyRes) {
+  if (req.httpVersion === '1.0') {
+    delete proxyRes.headers['transfer-encoding'];
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_outgoing.setConnection" id="apidoc.element.http-proxy.web_outgoing.setConnection">
+        function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>setConnection
+        <span class="apidocSignatureSpan">(req, res, proxyRes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setConnection(req, res, proxyRes) {
+  if (req.httpVersion === '1.0') {
+    proxyRes.headers.connection = req.headers.connection || 'close';
+  } else if (req.httpVersion !== '2.0' &amp;&amp; !proxyRes.headers.connection) {
+    proxyRes.headers.connection = req.headers.connection || 'keep-alive';
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_outgoing.setRedirectHostRewrite" id="apidoc.element.http-proxy.web_outgoing.setRedirectHostRewrite">
+        function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>setRedirectHostRewrite
+        <span class="apidocSignatureSpan">(req, res, proxyRes, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setRedirectHostRewrite(req, res, proxyRes, options) {
+  if ((options.hostRewrite || options.autoRewrite || options.protocolRewrite)
+      &amp;&amp; proxyRes.headers['location']
+      &amp;&amp; redirectRegex.test(proxyRes.statusCode)) {
+    var target = url.parse(options.target);
+    var u = url.parse(proxyRes.headers['location']);
+
+    // make sure the redirected host matches the target host before rewriting
+    if (target.host != u.host) {
+      return;
+    }
+
+    if (options.hostRewrite) {
+      u.host = options.hostRewrite;
+    } else if (options.autoRewrite) {
+      u.host = req.headers['host'];
+    }
+    if (options.protocolRewrite) {
+      u.protocol = options.protocolRewrite;
+    }
+
+    proxyRes.headers['location'] = u.format();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_outgoing.writeHeaders" id="apidoc.element.http-proxy.web_outgoing.writeHeaders">
+        function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>writeHeaders
+        <span class="apidocSignatureSpan">(req, res, proxyRes, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeHeaders(req, res, proxyRes, options) {
+  var rewriteCookieDomainConfig = options.cookieDomainRewrite,
+      preserveHeaderKeyCase = options.preserveHeaderKeyCase,
+      rawHeaderKeyMap,
+      setHeader = function(key, header) {
+        if (header == undefined) return;
+        if (rewriteCookieDomainConfig &amp;&amp; key.toLowerCase() === 'set-cookie') {
+          header = common.rewriteCookieDomain(header, rewriteCookieDomainConfig);
+        }
+        res.setHeader(String(key).trim(), header);
+      };
+
+  if (typeof rewriteCookieDomainConfig === 'string') { //also test for ''
+    rewriteCookieDomainConfig = { '*': rewriteCookieDomainConfig };
+  }
+
+  // message.rawHeaders is added in: v0.11.6
+  // https://nodejs.org/api/http.html#http_message_rawheaders
+  if (preserveHeaderKeyCase &amp;&amp; proxyRes.rawHeaders != undefined) {
+    rawHeaderKeyMap = {};
+    for (var i = 0; i &lt; proxyRes.rawHeaders.length; i += 2) {
+      var key = proxyRes.rawHeaders[i];
+      rawHeaderKeyMap[key.toLowerCase()] = key;
+    }
+  }
+
+  Object.keys(proxyRes.headers).forEach(function(key) {
+    var header = proxyRes.headers[key];
+    if (preserveHeaderKeyCase &amp;&amp; rawHeaderKeyMap) {
+      key = rawHeaderKeyMap[key] || key;
+    }
+    setHeader(key, header);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.web_outgoing.writeStatusCode" id="apidoc.element.http-proxy.web_outgoing.writeStatusCode">
+        function <span class="apidocSignatureSpan">http-proxy.web_outgoing.</span>writeStatusCode
+        <span class="apidocSignatureSpan">(req, res, proxyRes)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeStatusCode(req, res, proxyRes) {
+  // From Node.js docs: response.writeHead(statusCode[, statusMessage][, headers])
+  if(proxyRes.statusMessage) {
+    res.writeHead(proxyRes.statusCode, proxyRes.statusMessage);
+  } else {
+    res.writeHead(proxyRes.statusCode);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.http-proxy.ws_incoming" id="apidoc.module.http-proxy.ws_incoming">module http-proxy.ws_incoming</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.ws_incoming.XHeaders" id="apidoc.element.http-proxy.ws_incoming.XHeaders">
+        function <span class="apidocSignatureSpan">http-proxy.ws_incoming.</span>XHeaders
+        <span class="apidocSignatureSpan">(req, socket, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function XHeaders(req, socket, options) {
+  if(!options.xfwd) return;
+
+  var values = {
+    for  : req.connection.remoteAddress || req.socket.remoteAddress,
+    port : common.getPort(req),
+    proto: common.hasEncryptedConnection(req) ? 'wss' : 'ws'
+  };
+
+  ['for', 'port', 'proto'].forEach(function(header) {
+    req.headers['x-forwarded-' + header] =
+      (req.headers['x-forwarded-' + header] || '') +
+      (req.headers['x-forwarded-' + header] ? ',' : '') +
+      values[header];
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.ws_incoming.checkMethodAndHeader" id="apidoc.element.http-proxy.ws_incoming.checkMethodAndHeader">
+        function <span class="apidocSignatureSpan">http-proxy.ws_incoming.</span>checkMethodAndHeader
+        <span class="apidocSignatureSpan">(req, socket)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function checkMethodAndHeader(req, socket) {
+  if (req.method !== 'GET' || !req.headers.upgrade) {
+    socket.destroy();
+    return true;
+  }
+
+  if (req.headers.upgrade.toLowerCase() !== 'websocket') {
+    socket.destroy();
+    return true;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.http-proxy.ws_incoming.stream" id="apidoc.element.http-proxy.ws_incoming.stream">
+        function <span class="apidocSignatureSpan">http-proxy.ws_incoming.</span>stream
+        <span class="apidocSignatureSpan">(req, socket, options, head, server, clb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function stream(req, socket, options, head, server, clb) {
+  common.setupSocket(socket);
+
+  if (head &amp;&amp; head.length) socket.unshift(head);
+
+
+  var proxyReq = (common.isSSL.test(options.target.protocol) ? https : http).request(
+    common.setupOutgoing(options.ssl || {}, options, req)
+  );
+
+  // Enable developers to modify the proxyReq before headers are sent
+  if (server) { server.emit('proxyReqWs', proxyReq, req, socket, options, head); }
+
+  // Error Handler
+  proxyReq.on('error', onOutgoingError);
+  proxyReq.on('response', function (res) {
+    // if upgrade event isn't going to happen, close the socket
+    if (!res.upgrade) socket.end();
+  });
+
+  proxyReq.on('upgrade', function(proxyRes, proxySocket, proxyHead) {
+    proxySocket.on('error', onOutgoingError);
+
+    // Allow us to listen when the websocket has completed
+    proxySocket.on('end', function () {
+      server.emit('close', proxyRes, proxySocket, proxyHead);
+    });
+
+    // The pipe below will end proxySocket if socket closes cleanly, but not
+    // if it errors (eg, vanishes from the net and starts returning
+    // EHOSTUNREACH). We need to do that explicitly.
+    socket.on('error', function () {
+      proxySocket.end();
+    });
+
+    common.setupSocket(proxySocket);
+
+    if (proxyHead &amp;&amp; proxyHead.length) proxySocket.unshift(proxyHead);
+
+    //
+    // Remark: Handle writing the headers to the socket when switching protocols
+    // Also handles when a header is an array
+    //
+    socket.write(
+      Object.keys(proxyRes.headers).reduce(function (head, key) {
+        var value = proxyRes.headers[key];
+
+        if (!Array.isArray(value)) {
+          head.push(key + ': ' + value);
+          return head;
+        }
+
+        for (var i = 0; i &lt; value.length; i++) {
+          head.push(key + ': ' + value[i]);
+        }
+        return head;
+      }, ['HTTP/1.1 101 Switching Protocols'])
+      .join('\r\n') + '\r\n\r\n'
+    );
+
+    proxySocket.pipe(socket).pipe(proxySocket);
+
+    server.emit('open', proxySocket);
+    server.emit('proxySocket', proxySocket);  //DEPRECATED.
+  });
+
+  return proxyReq.end(); // XXX: CHECK IF THIS IS THIS CORRECT
+
+  function onOutgoingError(err) {
+    if (clb) {
+      clb(err, req, socket);
+    } else {
+      server.emit('error', err, req, socket);
+    }
+    socket.end();
+  }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
