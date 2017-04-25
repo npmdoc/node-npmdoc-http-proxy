@@ -1,6 +1,6 @@
 # npmdoc-http-proxy
 
-#### api documentation for  [http-proxy (v1.16.2)](https://github.com/nodejitsu/node-http-proxy#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-http-proxy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-http-proxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-http-proxy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-http-proxy)
+#### basic api documentation for  [http-proxy (v1.16.2)](https://github.com/nodejitsu/node-http-proxy#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-http-proxy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-http-proxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-http-proxy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-http-proxy)
 
 #### HTTP proxying for the masses
 
@@ -83,7 +83,8 @@
         "test": "mocha test/*-test.js",
         "test-cov": "mocha --require blanket -R html-cov > cov/coverage.html"
     },
-    "version": "1.16.2"
+    "version": "1.16.2",
+    "bin": {}
 }
 ```
 
